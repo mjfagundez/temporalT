@@ -4,8 +4,10 @@ WORKDIR /app
 
 COPY . .
 
-RUN go build -o start ./start
+RUN go build -o strt ./start
 
-RUN chmod +x ./start
+RUN chmod +x ./strt
 
-CMD [ "./start" ]
+EXPOSE 8080
+
+CMD [ "./strt" ]

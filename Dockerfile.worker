@@ -4,8 +4,10 @@ WORKDIR /app
 
 COPY . .
 
-RUN go build -o worker ./worker
+RUN go build -o wrkr ./worker
 
-RUN chmod +x ./worker
+RUN chmod +x ./wrkr
 
-CMD [ "./worker" ]
+EXPOSE 8080
+
+CMD [ "./wrkr" ]
