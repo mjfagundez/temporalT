@@ -2,7 +2,8 @@ package main
 
 import (
 	"log"
-	"temporalT/app"
+
+	app "github.com/mjfagundez/temporalT"
 
 	"go.temporal.io/sdk/client"
 	"go.temporal.io/sdk/worker"

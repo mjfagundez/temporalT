@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/mjfagundez/temporalT"
 	"log"
-	"temporalT"
 
 	"go.temporal.io/sdk/client"
 )
